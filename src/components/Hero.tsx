@@ -195,10 +195,10 @@ const Hero: React.FC = () => {
                     {/* Stats Section */}
                     <div
                         ref={statsRef}
-                        className="absolute -bottom-24 lg:bottom-0 right-0 w-full lg:w-2/3 bg-white/95 backdrop-blur-md p-6 shadow-2xl lg:shadow-none rounded-lg  md:rounded-tl-3xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
+                        className="absolute -bottom-40 lg:bottom-0 right-0 w-full lg:w-2/3 bg-white/95 backdrop-blur-md p-6 shadow-2xl lg:shadow-none rounded-lg  md:rounded-tl-3xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {stats.map((stat, index) => (
-                            <div key={index} className="flex flex-row gap-2 shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">
+                            <div key={index} className="flex flex-row gap-2 lg:shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">
                                 <stat.icon className={`${stat.color} w-8 h-8 lg:w-10 lg:h-10`} />
                                 <div className="flex flex-col items-baseline mt-2">
                                     <span className="number text-2xl lg:text-3xl font-bold">0+</span>
