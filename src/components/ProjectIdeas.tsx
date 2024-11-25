@@ -30,7 +30,7 @@ const ProjectIdeas: React.FC = () => {
   };
 
   return (
-    <div className="  flex flex-col items-center p-10">
+    <div className="  flex flex-col items-center mt-40 md:my-10 p-10">
       {/* Header Section */}
       <motion.h1
         className="text-2xl font-bold mb-2"

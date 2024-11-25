@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Building, Briefcase, Layers, Users } from "lucide-react";
+import { Building, Briefcase, Layers, Users, Apple, PlayCircle } from "lucide-react";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { TextPlugin } from 'gsap/TextPlugin';
@@ -155,7 +155,7 @@ const Hero: React.FC = () => {
     }, []);
 
     return (
-        <div className=" w-full over " ref={heroRef}>
+        <div className=" w-full  " ref={heroRef}>
             <div className="relative w-full">
                 {/* Background Image Section */}
                 <div className="w-full h-[550px] relative">
@@ -167,12 +167,12 @@ const Hero: React.FC = () => {
                     />
                     
                     {/* Hero Content */}
-                    <div className="absolute top-0 left-0 w-full h-full z-20 flex flex-col justify-center px-4 md:px-12 lg:px-24" ref={textRef}>
+                    <div className="absolute  inset-1 w-full h-full z-20 flex flex-col items-center justify-center px-4 md:px-12 lg:px-24" ref={textRef}>
                         <div className="max-w-2xl">
                             <h1 ref={headingRef} className="text-white text-4xl md:text-6xl font-bold tracking-tight opacity-0">
                                 TEENLANCERS
                             </h1>
-                            <p className="text-white/90 mt-6 text-lg md:text-xl font-light leading-relaxed">
+                            <p className="text-white mt-6 text-lg md:text-xl font-light leading-relaxed">
                                 Adult Journey starts at Teen, Work with Real High Professional Companies, 
                                 Real Client Side Projects, Real Boost To Your Earnings, Real Money.
                             </p>
@@ -180,13 +180,23 @@ const Hero: React.FC = () => {
                             {/* App Download Section */}
                             <div className="mt-8" ref={downloadRef}>
                                 <p className="text-white text-lg mb-4">Download App</p>
-                                <div className="flex flex-wrap gap-4">
-                                    <button className="bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 rounded-lg p-3 flex items-center gap-2 transform">
-                                        <img src="/api/placeholder/120/40" alt="App Store" className="h-8" />
-                                    </button>
-                                    <button className="bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 rounded-lg p-3 flex items-center gap-2 transform">
-                                        <img src="/api/placeholder/120/40" alt="Google Play" className="h-8" />
-                                    </button>
+                                <div className="flex space-x-4 mt-6">
+                                <a 
+                                    href="#" 
+                                    className="flex items-center space-x-2  text-white px-4 py-2 rounded-lg 
+                                    hover:bg-gray-800/40 transform hover:scale-105 transition-all duration-300"
+                                >
+                                    <Apple size={20} />
+                                    <span>App Store</span>
+                                </a>
+                                <a 
+                                    href="#" 
+                                    className="flex items-center space-x-2  text-white px-4 py-2 rounded-lg 
+                                    hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
+                                >
+                                    <PlayCircle size={20} />
+                                    <span>Play Store</span>
+                                </a>
                                 </div>
                             </div>
                         </div>
@@ -195,7 +205,7 @@ const Hero: React.FC = () => {
                     {/* Stats Section */}
                     <div
                         ref={statsRef}
-                        className="absolute -bottom-40 lg:bottom-0 right-0 w-full lg:w-2/3 bg-white/95 backdrop-blur-md p-6 shadow-2xl lg:shadow-none rounded-lg  md:rounded-tl-3xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
+                        className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-80 w-full lg:w-2/3 bg-white backdrop-blur-md p-6 shadow-2xl lg:shadow-none   md:rounded-3xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {stats.map((stat, index) => (
                             <div key={index} className="flex flex-row gap-2 lg:shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">
@@ -210,16 +220,16 @@ const Hero: React.FC = () => {
                     </div>
 
                     {/* Mobile App Screens */}
-                    <div
+                    {/* <div
                         ref={mobileRef}
-                        className="hidden lg:flex absolute bottom-0 right-0 items-center justify-center  w-1/3 h-full z-20"
+                        className="hidden  absolute bottom-0 right-0 items-center justify-center  w-1/3 h-full z-20"
                     >
                         <img
                             src={img2}
                             alt="Mobile app screens"
                             className=" h-[60%] object-contain"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

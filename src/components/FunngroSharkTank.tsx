@@ -85,7 +85,7 @@ const FunngroSharkTank: React.FC = () => {
   };
 
   return (
-    <div className=" bg-gradient-to-br from-blue-50 to-purple-50 py-16 px-4">
+    <div className="  py-16 px-4">
       <motion.div 
         className="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl p-8 md:p-12"
         initial={{ opacity: 0, y: 20 }}

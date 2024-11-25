@@ -131,7 +131,7 @@ const FunBlogs: React.FC = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-16 px-4">
+    <div className="py-16 px-4">
       <motion.div 
         className="max-w-7xl mx-auto"
         initial={{ opacity: 0 }}
