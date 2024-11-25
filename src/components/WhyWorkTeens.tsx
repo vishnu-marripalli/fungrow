@@ -35,7 +35,7 @@ const WhyWorkWithTeens: React.FC = () => {
           variants={itemVariants}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-5xl text-center font-bold text-gray-800 mb-4">
             Why Work with Teens
           </h1>
           <p className="text-gray-700 max-w-2xl mx-auto">
