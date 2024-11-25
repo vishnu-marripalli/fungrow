@@ -17,7 +17,6 @@ import Navbar from '../components/Navbar'
 const Teen = () => {
   return (
     <>
-   <Navbar />
    {/* <div className="bg-gradient-to-br from-gray-50 to-blue-50 "> */}
    <div className="bg-white overflow-x-hidden">
    <Hero/>
@@ -30,7 +29,6 @@ const Teen = () => {
    <FunBlogs/>
    <FAQSection />
    </div>
-   <Footer/>
    </>
 
   )
