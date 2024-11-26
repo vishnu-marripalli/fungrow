@@ -197,7 +197,7 @@ const Hero: React.FC = () => {
                     {/* Stats Section */}
                     <div
                         ref={statsRef}
-                        className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-80 w-full lg:w-2/3 bg-white  backdrop-blur-md p-6 shadow-2xl   md:rounded-xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
+                        className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-64 w-full lg:w-2/3 bg-white  backdrop-blur-md p-6 shadow-2xl   md:rounded-xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {stats.map((stat, index) => (
                             <div key={index} className="flex flex-row gap-2 lg:shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">

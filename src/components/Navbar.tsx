@@ -31,7 +31,7 @@ const Navbar = () => {
   const navLinks = [
     { title: "Teen", icon: <User size={18} />, href: "/" },
     { title: "Company", icon: <Building2 size={18} />, href: "/company" },
-    { title: "Parent", icon: <Users size={18} />, href: "#" },
+    // { title: "Parent", icon: <Users size={18} />, href: "#" },
   ];
 
   return (
