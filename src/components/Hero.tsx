@@ -21,7 +21,6 @@ const Hero: React.FC = () => {
     const heroRef = useRef<HTMLDivElement | null>(null);
     const textRef = useRef<HTMLDivElement | null>(null);
     const statsRef = useRef<HTMLDivElement | null>(null);
-    const mobileRef = useRef<HTMLDivElement | null>(null);
     const headingRef = useRef<HTMLHeadingElement | null>(null);
     const downloadRef = useRef<HTMLDivElement | null>(null);
 
@@ -43,7 +42,6 @@ const Hero: React.FC = () => {
             gsap.set(heroRef.current, { opacity: 0 });
             gsap.set(textRef.current?.children, { opacity: 0, y: 30 });
             gsap.set(statsRef.current, { opacity: 0, y: 50 });
-            gsap.set(mobileRef.current, { opacity: 0, x: 50 });
 
             // Hero section fade in with backdrop blur
             mainTl.to(heroRef.current, {
@@ -100,13 +98,7 @@ const Hero: React.FC = () => {
                 }
             }, "-=0.3");
 
-            // Animate mobile screens with bounce effect
-            mainTl.to(mobileRef.current, {
-                opacity: 1,
-                x: 0,
-                duration: 0.8,
-                ease: "elastic.out(1, 0.8)"
-            }, "-=0.4");
+           
 
             // Add hover animations for download buttons
             const buttons = downloadRef.current?.querySelectorAll('button');
@@ -192,7 +184,7 @@ const Hero: React.FC = () => {
                                 <a 
                                     href="#" 
                                     className="flex items-center space-x-2  text-white px-4 py-2 rounded-lg 
-                                    hover:bg-gray-800 transform hover:scale-105 transition-all duration-300"
+                                    hover:bg-gray-800/40 transform hover:scale-105 transition-all duration-300"
                                 >
                                     <PlayCircle size={20} />
                                     <span>Play Store</span>
@@ -205,7 +197,7 @@ const Hero: React.FC = () => {
                     {/* Stats Section */}
                     <div
                         ref={statsRef}
-                        className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-80 w-full lg:w-2/3 bg-white backdrop-blur-md p-6 shadow-2xl lg:shadow-none   md:rounded-3xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
+                        className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-80 w-full lg:w-2/3 bg-white  backdrop-blur-md p-6 shadow-2xl   md:rounded-xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {stats.map((stat, index) => (
                             <div key={index} className="flex flex-row gap-2 lg:shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">
