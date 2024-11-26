@@ -200,7 +200,7 @@ const Hero: React.FC = () => {
                         className="absolute -bottom-40 lg:-bottom-11 lg:inset-x-64 w-full lg:w-2/3 bg-white  backdrop-blur-md p-6 shadow-2xl   md:rounded-xl  z-30 grid grid-cols-2 lg:grid-cols-4 gap-8"
                     >
                         {stats.map((stat, index) => (
-                            <div key={index} className="flex flex-row gap-2 lg:shadow-xl rounded-lg p-2 items-center text-center transform cursor-pointer">
+                            <div key={index} className="flex flex-row gap-2  rounded-lg p-2 items-center text-center transform cursor-pointer">
                                 <stat.icon className={`${stat.color} w-8 h-8 lg:w-10 lg:h-10`} />
                                 <div className="flex flex-col items-baseline mt-2">
                                     <span className="number text-2xl lg:text-3xl font-bold">0+</span>
